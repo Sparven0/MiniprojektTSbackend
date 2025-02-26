@@ -16,8 +16,8 @@ booksRouter.get('/books', validation, async (req: Request, res: Response, next: 
     try {
         const errors = validationResult(req);
         if (errors.array().length > 0) {
-            // res.status(400).json({ errors: errors.array() });
-            console.log('Error')
+            //res.status(400).json({ errors: errors.array() });
+            console.log('Error', errors.array)
         }
         const data = await getBooks();
         res.send({ books: data });

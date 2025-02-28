@@ -1,0 +1,18 @@
+{
+  "books": [
+    {
+      "ID": 1740597908435,
+      "title": "Book",
+      "writer": "Here",
+      "read": false,
+      "review": ""
+    },
+    {
+      "ID": 1234,
+      "title": "HEJSANEEEE",
+      "writer": "SOMEONE",
+      "review": "no comment",
+      "read": true
+    }
+  ]
+}

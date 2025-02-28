@@ -1,5 +1,5 @@
 import fs from "fs/promises"
-const path = "DB.json"
+const path = "./src/DB.json"
 
 type Books = {
 ID:number,

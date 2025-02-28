@@ -1,5 +1,5 @@
 import fs from "fs/promises";
-const path = "./src/DB.json";
+const path = "DB.json";
 export async function getBooks() {
     const rawD = await fs.readFile(path, 'utf-8');
     const { books } = JSON.parse(rawD);

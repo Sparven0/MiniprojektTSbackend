@@ -1,11 +1,3 @@
 {
-  "books": [
-    {
-      "ID": 1740597908435,
-      "title": "Book",
-      "writer": "Here",
-      "read": false,
-      "review": ""
-    }
-  ]
+  "books": []
 }

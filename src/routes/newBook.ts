@@ -4,8 +4,12 @@ import { writeBook } from "../serverFunctions.js";
 
 export const newBookRouter = Router();
 
+const newBookValidation = [
+    body('title').isString(),
+    body('writer').isString(),
+]
 
-newBookRouter.post('/books/new', async (req: Request, res: Response, next: NextFunction) => {
+newBookRouter.post('/books/new', newBookValidation, async (req: Request, res: Response, next: NextFunction) => {
     const newBook = req.body;
     try {
         const errors = validationResult(req);
